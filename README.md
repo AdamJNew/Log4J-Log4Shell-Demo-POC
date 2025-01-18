@@ -89,10 +89,18 @@ sudo apt update && sudo apt upgrade -y
 ```bash
 sudo apt install openjdk-11-jdk -y
 ```
+```bash
+sudo apt install apache2
+```
 Once the server is setup, clone the git repo to the Ubuntu server and cd into the log4j-lab folder.
 ```bash
-cd TargetServer/log4j-lab
+cd Target/
 ```
+Copy the contents of apachecopy to /var/www/html, then modify the post.js to match the IP of your ubuntu server.
+```bash
+cd /var/www/html && sudo nano post.js
+```
+
 You will need to download the log4j dependanies for the vulnerable java application to run
 ```bash
 sudo wget https://archive.apache.org/dist/logging/log4j/2.14.1/apache-log4j-2.14.1-bin.tar.gz
