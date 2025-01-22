@@ -146,7 +146,9 @@ Serving HTTP on 0.0.0.0 port 8443 (http://0.0.0.0:8443/) ...
 
 Finally, In the Terminal window you had the netcat listening, you should now have reverse shell access
 
+Another Approach is to load up the Ubuntu server in a web-browser where a demo website is live, from here we can navigate to /admin/ to find the vulnerable login page, simply inputting our JNDI lookup string and a fake password will provide the same reverse shell access using the HTTP and LDAP Server.
 
+You can also search for the admin page using Gobuster if you want a more realistic demonstation.
 
 ## References
 
